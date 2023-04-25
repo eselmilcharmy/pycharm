@@ -90,3 +90,6 @@ def init_db_command():
     admin = User(username="admin", password=generate_password_hash("test"))
     admin.save()
     click.echo('Admin user with password test created')
+    admin = User(username="stalhajr", password=generate_password_hash("IHBNATHj1."))
+    admin.save()
+    click.echo('Admin user with password test created')
