@@ -27,6 +27,6 @@ def add():
         if form.validate():
             book = Book(title=form.title.data, author=form.author.data, year=form.year.data)
             book.save()
-            flash("Book added successfully.", "success")
+            flash("Book added Albinot successfully.", "success")
             return redirect(url_for('.home'))
     return render_template('form.html', form=form, info=session)
